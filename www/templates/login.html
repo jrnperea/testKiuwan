@@ -1,0 +1,20 @@
+<ion-view title="Login" hasHeader hide-back-button="true">
+  <ion-content padding="true" class="has-header">
+    <form>
+      <ion-list>
+        <label class="item item-input">
+          <span class="input-label">Usuario:</span>
+          <input type="text" placeholder="Ingrese su usuario" ng-model="creds.email">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Password:</span>
+          <input type="password" placeholder="Ingrese su password" ng-model="creds.password" ng-minlength="6">
+        </label>
+      </ion-list>
+      <div class="spacer" style="height: 40px;"></div>
+      <a ng-click="doLoginAction(creds)" class="button button-stable button-block">Iniciar sesion</a>
+      <a href="#/registroUsuario" class="button button-positive button-clear button-block">Registrarse</a>
+
+    </form>
+  </ion-content>
+</ion-view>
